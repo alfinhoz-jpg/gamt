@@ -1,0 +1,64 @@
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  background-color: #ffffff;
+  z-index: -1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222222;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #555555;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  padding-left: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 100px;
+}
