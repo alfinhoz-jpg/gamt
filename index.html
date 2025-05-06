@@ -4,137 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GAMT - Sabores do Mundo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <header class="bg-gray-100 flex justify-center items-center p-6 shadow-md">
-    <h1 class="text-3xl text-green-600 font-bold tracking-wide">GAMT</h1>
-  </header>
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
   <body class="bg-white text-gray-800">
-    <main class="max-w-7xl mx-auto px-6 py-16 space-y-28">
+
+    <!-- Header fixo e transparente -->
+    <header class="fixed top-0 w-full bg-white/70 backdrop-blur-md shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-semibold text-green-600 tracking-wider">GAMT</h1>
+        <nav class="space-x-6 text-sm text-gray-600 hidden md:block">
+          <a href="#" class="hover:text-green-600 transition">Início</a>
+          <a href="#" class="hover:text-green-600 transition">Sabores</a>
+          <a href="#" class="hover:text-green-600 transition">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="pt-32 max-w-7xl mx-auto px-6 py-16 space-y-32">
+
+      <!-- Template de seção reutilizável -->
       <!-- América -->
-      <section class="flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-          <img
-            src="https://images.immediate.co.uk/production/volatile/sites/30/2022/10/Pork-carnitas-b94893e.jpg?quality=90&resize=567,400"
-            alt="Tacos Mexicanos"
-            class="rounded-lg shadow-lg w-full"
-          />
+      <section class="grid md:grid-cols-2 items-center gap-12">
+        <div class="relative group">
+          <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/10/Pork-carnitas-b94893e.jpg?quality=90&resize=567,400" alt="Tacos Mexicanos" class="rounded-xl shadow-xl transition-transform transform group-hover:scale-105 duration-300" />
         </div>
-        <div class="md:w-1/2">
-          <h2 class="text-4xl font-bold mb-4">🌮 América</h2>
-          <p class="mb-4 text-lg">
-            Sabores autênticos do continente americano.
-          </p>
-          <ul class="list-disc list-inside space-y-2">
-            <li>
-              <strong>Tacos Mexicanos</strong> – carne, queijo e guacamole
-            </li>
-            <li><strong>Costela BBQ</strong> – defumada com molho agridoce</li>
-            <li>
-              <strong>Feijoada Brasileira</strong> – feijão preto com carnes
-            </li>
+        <div>
+          <h2 class="text-5xl font-bold text-gray-900 mb-6">🌮 América</h2>
+          <p class="text-lg text-gray-600 mb-6">Sabores autênticos do continente americano.</p>
+          <ul class="space-y-4 text-base text-gray-700">
+            <li><strong class="text-green-600">Tacos Mexicanos</strong> – carne, queijo e guacamole</li>
+            <li><strong class="text-green-600">Costela BBQ</strong> – defumada com molho agridoce</li>
+            <li><strong class="text-green-600">Feijoada Brasileira</strong> – feijão preto com carnes</li>
           </ul>
         </div>
       </section>
 
       <!-- África -->
-      <section class="flex flex-col md:flex-row-reverse items-center gap-12">
-        <div class="md:w-1/2">
-          <img
-            src="URL-DA-IMAGEM-AFRICA"
-            alt="Comida Africana"
-            class="rounded-lg shadow-lg w-full"
-          />
+      <section class="grid md:grid-cols-2 items-center gap-12 md:flex-row-reverse">
+        <div class="relative group">
+          <img src="https://www.africanbites.com/wp-content/uploads/2014/05/Moambe-Chicken.jpg" alt="Comida Africana" class="rounded-xl shadow-xl transition-transform transform group-hover:scale-105 duration-300" />
         </div>
-        <div class="md:w-1/2">
-          <h2 class="text-4xl font-bold mb-4">🍲 África</h2>
-          <p class="mb-4 text-lg">Culinária rica em especiarias e tradição.</p>
-          <ul class="list-disc list-inside space-y-2">
-            <li>
-              <strong>Moambe Chicken</strong> – frango com molho de amendoim
-            </li>
-            <li><strong>Tagine Marroquino</strong> – carne com frutas secas</li>
-            <li><strong>Bobotie</strong> – carne assada com ovos e curry</li>
+        <div>
+          <h2 class="text-5xl font-bold text-gray-900 mb-6">🍲 África</h2>
+          <p class="text-lg text-gray-600 mb-6">Culinária rica em especiarias e tradição.</p>
+          <ul class="space-y-4 text-base text-gray-700">
+            <li><strong class="text-green-600">Moambe Chicken</strong> – frango com molho de amendoim</li>
+            <li><strong class="text-green-600">Tagine Marroquino</strong> – carne com frutas secas</li>
+            <li><strong class="text-green-600">Bobotie</strong> – carne assada com ovos e curry</li>
           </ul>
         </div>
       </section>
 
       <!-- Ásia -->
-      <section class="flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-          <img
-            src="URL-DA-IMAGEM-ASIA"
-            alt="Comida Asiática"
-            class="rounded-lg shadow-lg w-full"
-          />
+      <section class="grid md:grid-cols-2 items-center gap-12">
+        <div class="relative group">
+          <img src="https://cdn.tasteatlas.com/images/dishes/fbe20deae8134e6d83d30ec6c5149c14.jpg?mw=1300" alt="Comida Asiática" class="rounded-xl shadow-xl transition-transform transform group-hover:scale-105 duration-300" />
         </div>
-        <div class="md:w-1/2">
-          <h2 class="text-4xl font-bold mb-4">🍜 Ásia</h2>
-          <p class="mb-4 text-lg">Sabores intensos e tradições milenares.</p>
-          <ul class="list-disc list-inside space-y-2">
-            <li>
-              <strong>Ramen Japonês</strong> – caldo profundo com toppings
-            </li>
-            <li><strong>Bulgogi Coreano</strong> – carne marinada grelhada</li>
-            <li>
-              <strong>Frango Xadrez Chinês</strong> – frango agridoce com
-              legumes
-            </li>
+        <div>
+          <h2 class="text-5xl font-bold text-gray-900 mb-6">🍜 Ásia</h2>
+          <p class="text-lg text-gray-600 mb-6">Sabores intensos e tradições milenares.</p>
+          <ul class="space-y-4 text-base text-gray-700">
+            <li><strong class="text-green-600">Ramen Japonês</strong> – caldo profundo com toppings</li>
+            <li><strong class="text-green-600">Bulgogi Coreano</strong> – carne marinada grelhada</li>
+            <li><strong class="text-green-600">Frango Xadrez Chinês</strong> – frango agridoce com legumes</li>
           </ul>
         </div>
       </section>
 
       <!-- Europa -->
-      <section class="flex flex-col md:flex-row-reverse items-center gap-12">
-        <div class="md:w-1/2">
-          <img
-            src="URL-DA-IMAGEM-EUROPA"
-            alt="Comida Europeia"
-            class="rounded-lg shadow-lg w-full"
-          />
+      <section class="grid md:grid-cols-2 items-center gap-12 md:flex-row-reverse">
+        <div class="relative group">
+          <img src="https://cdn.tasteatlas.com/images/dishes/74b301e4f15f429b948dbeed52b21965.jpg" alt="Comida Europeia" class="rounded-xl shadow-xl transition-transform transform group-hover:scale-105 duration-300" />
         </div>
-        <div class="md:w-1/2">
-          <h2 class="text-4xl font-bold mb-4">🍝 Europa</h2>
-          <p class="mb-4 text-lg">
-            Culinárias clássicas e refinadas da Europa.
-          </p>
-          <ul class="list-disc list-inside space-y-2">
-            <li>
-              <strong>Spaghetti à Bolonhesa</strong> – massa com molho de carne
-            </li>
-            <li><strong>Ratatouille Francês</strong> – legumes grelhados</li>
-            <li><strong>Paella Espanhola</strong> – arroz com frutos do mar</li>
+        <div>
+          <h2 class="text-5xl font-bold text-gray-900 mb-6">🍝 Europa</h2>
+          <p class="text-lg text-gray-600 mb-6">Culinárias clássicas e refinadas da Europa.</p>
+          <ul class="space-y-4 text-base text-gray-700">
+            <li><strong class="text-green-600">Spaghetti à Bolonhesa</strong> – massa com molho de carne</li>
+            <li><strong class="text-green-600">Ratatouille Francês</strong> – legumes grelhados</li>
+            <li><strong class="text-green-600">Paella Espanhola</strong> – arroz com frutos do mar</li>
           </ul>
         </div>
       </section>
 
       <!-- Oceania -->
-      <section class="flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-          <img
-            src="URL-DA-IMAGEM-OCEANIA"
-            alt="Comida da Oceania"
-            class="rounded-lg shadow-lg w-full"
-          />
+      <section class="grid md:grid-cols-2 items-center gap-12">
+        <div class="relative group">
+          <img src="https://www.recipetineats.com/wp-content/uploads/2020/06/Aussie-Meat-Pies_7.jpg" alt="Comida da Oceania" class="rounded-xl shadow-xl transition-transform transform group-hover:scale-105 duration-300" />
         </div>
-        <div class="md:w-1/2">
-          <h2 class="text-4xl font-bold mb-4">🥧 Oceania</h2>
-          <p class="mb-4 text-lg">Receitas rústicas do outro lado do mundo.</p>
-          <ul class="list-disc list-inside space-y-2">
-            <li><strong>Meat Pie</strong> – torta recheada de carne</li>
-            <li><strong>Lamb Roast</strong> – cordeiro assado com legumes</li>
-            <li><strong>Damper</strong> – pão tradicional australiano</li>
+        <div>
+          <h2 class="text-5xl font-bold text-gray-900 mb-6">🥧 Oceania</h2>
+          <p class="text-lg text-gray-600 mb-6">Receitas rústicas do outro lado do mundo.</p>
+          <ul class="space-y-4 text-base text-gray-700">
+            <li><strong class="text-green-600">Meat Pie</strong> – torta recheada de carne</li>
+            <li><strong class="text-green-600">Lamb Roast</strong> – cordeiro assado com legumes</li>
+            <li><strong class="text-green-600">Damper</strong> – pão tradicional australiano</li>
           </ul>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="text-center py-6 bg-gray-100 text-sm text-gray-600">
       &copy; 2025 GAMT Restaurante. Todos os direitos reservados.
     </footer>
+
   </body>
 </html>
