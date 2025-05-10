@@ -129,7 +129,7 @@ section:nth-child(even):not(.hero):not(.site-footer) {
 }
 .main-nav li {
   margin-left: 25px;
-} /* Aumentado um pouco */
+}
 .main-nav a {
   text-decoration: none;
   color: var(--cor-texto-secundario);
@@ -150,7 +150,7 @@ section:nth-child(even):not(.hero):not(.site-footer) {
 
 .hero {
   background: linear-gradient(rgba(16, 85, 97, 0.2), rgba(3, 3, 46, 0.2)),
-    url("/GAMT/imgs/lounge.png") no-repeat center center/cover;
+    url("/imgs/lounge.png") no-repeat center center/cover;
   color: var(--cor-texto-principal);
   text-align: center;
   padding: 80px 20px;
