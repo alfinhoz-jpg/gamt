@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMT - Restaurante</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="#home" class="logo">GA<span>MT</span></a>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home" class="active">Início</a></li>
+            <li><a href="#cardapio-global">Cardápio Global</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <h1>Bem-vindo ao GAMT</h1>
+      <p>
+        Explore um universo de sabores em nossa jornada gastronômica pelos cinco
+        continentes.
+      </p>
+      <a href="#cardapio-global" class="btn-cta">Descubra Nossos Cardápios</a>
+    </section>
+
+    <section id="cardapio-global">
+      <div class="container">
+        <h2>Cardápio Global</h2>
+        <p class="intro-text">
+          Navegue pelos sabores do mundo! Cada continente oferece uma
+          experiência culinária única, com pratos cuidadosamente selecionados
+          para encantar seu paladar. Escolha um continente abaixo para ver o
+          cardápio detalhado.
+        </p>
+        <div class="continentes-grid">
+          <div class="continente-link-card">
+            <img src="imgs/african.png" alt="Ícone da África" />
+            <h3>África</h3>
+            <p>
+              Sabores vibrantes, especiarias exóticas e tradições ancestrais.
+            </p>
+            <a href="#africa-menu" class="btn btn-secondary"
+              >Ver Cardápio Africano</a
+            >
+          </div>
+          <div class="continente-link-card">
+            <img src="imgs/south-america_6195567.png" alt="Ícone da América" />
+            <h3>América</h3>
+            <p>
+              Da culinária reconfortante do norte à explosão de sabores do sul.
+            </p>
+            <a href="#america-menu" class="btn btn-secondary"
+              >Ver Cardápio Americano</a
+            >
+          </div>
+          <div class="continente-link-card">
+            <img src="imgs/torii-gate_18377431.png" alt="Ícone da Ásia" />
+            <h3>Ásia</h3>
+            <p>
+              Tradições milenares, ingredientes frescos e harmonia de sabores.
+            </p>
+            <a href="#asia-menu" class="btn btn-secondary"
+              >Ver Cardápio Asiático</a
+            >
+          </div>
+          <div class="continente-link-card">
+            <img src="imgs/europe.png" alt="Ícone da Europa" />
+            <h3>Europa</h3>
+            <p>
+              Culinária clássica, técnicas refinadas e diversidade regional.
+            </p>
+            <a href="#europa-menu" class="btn btn-secondary"
+              >Ver Cardápio Europeu</a
+            >
+          </div>
+          <div class="continente-link-card">
+            <img src="imgs/australia_3802122.png" alt="Ícone da Oceania" />
+            <h3>Oceania</h3>
+            <p>
+              Sabores frescos do mar, influências indígenas e culinária moderna.
+            </p>
+            <a href="#oceania-menu" class="btn btn-secondary"
+              >Ver Cardápio da Oceania</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="africa-menu" class="continent-menu-section">
+      <div class="container">
+        <h2>Cardápio da África</h2>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Entradas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Biscoitos de Milho (Mieliebrood Pap - África do Sul)</h4>
+              <p>
+                Pequenos pães ou bolinhos de milho levemente adocicados,
+                perfeitos para começar.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Sopa de Amendoim (Nkatenkwan - Gana)</h4>
+              <p>
+                Sopa cremosa e rica feita com pasta de amendoim, tomate,
+                gengibre e especiarias, muitas vezes com frango.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper">
+            <h3>Pratos Principais</h3>
+          </div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Jollof Rice com Frango Grelhado (Nigéria/Gana)</h4>
+              <p>
+                Arroz cozido em molho de tomate picante e especiarias, servido
+                com suculentos pedaços de frango grelhado.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Tagine de Cordeiro com Ameixas (Marrocos)</h4>
+              <p>
+                Cordeiro macio cozido lentamente com ameixas, amêndoas,
+                gengibre, açafrão e canela, um clássico agridoce.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Bobotie Tradicional (África do Sul)</h4>
+              <p>
+                Carne moída temperada com curry e frutas secas, coberta com um
+                creme de ovos e assada até dourar.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Muamba de Galinha (Angola)</h4>
+              <p>
+                Ensopado rico de galinha com quiabo, abóbora, azeite de dendê e
+                especiarias, servido com funge.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Sobremesas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Melktert (Torta de Leite - África do Sul)</h4>
+              <p>
+                Delicada torta com base crocante e recheio cremoso de leite,
+                polvilhada com canela.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Mandazi (Leste da África)</h4>
+              <p>
+                Pãezinhos fritos levemente adocicados, aromatizados com
+                cardamomo ou coco, ótimos com chá.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="back-to-global-menu">
+          <a href="#cardapio-global" class="btn">Voltar aos Continentes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="america-menu" class="continent-menu-section">
+      <div class="container">
+        <h2>Cardápio da América</h2>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Entradas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Guacamole Fresco com Totopos (México)</h4>
+              <p>
+                Creme de abacate temperado com coentro, cebola, tomate, pimenta
+                e limão, servido com chips de milho.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Empanadas Criollas (Argentina)</h4>
+              <p>
+                Pastéis assados ou fritos recheados com carne moída temperada,
+                azeitonas e ovo cozido.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper">
+            <h3>Pratos Principais</h3>
+          </div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Feijoada Brasileira Completa (Brasil)</h4>
+              <p>
+                Cozido de feijão preto com diversas carnes de porco, acompanhado
+                de arroz, couve, farofa e laranja.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>
+                Salmão Grelhado com Molho de Maracujá (Brasil/América Latina)
+              </h4>
+              <p>
+                Salmão fresco grelhado, coberto com um molho agridoce e exótico
+                de maracujá, servido com purê de mandioquinha.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Costelinhas BBQ ao Estilo Americano (EUA)</h4>
+              <p>
+                Costelas de porco cozidas lentamente e depois grelhadas com um
+                molho barbecue defumado e adocicado.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Lomo Saltado (Peru)</h4>
+              <p>
+                Tiras de filé mignon salteadas com cebola roxa, tomate e pimenta
+                em molho de soja, servidas com batatas fritas e arroz.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Sobremesas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Cheesecake de Frutas Vermelhas (EUA)</h4>
+              <p>
+                Torta cremosa à base de cream cheese sobre uma base de biscoito,
+                coberta com calda de frutas vermelhas.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Alfajor Rogel (Argentina/Uruguai)</h4>
+              <p>
+                Torre de finas camadas de massa crocante intercaladas com doce
+                de leite, coberta com merengue italiano.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="back-to-global-menu">
+          <a href="#cardapio-global" class="btn">Voltar aos Continentes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="asia-menu" class="continent-menu-section">
+      <div class="container">
+        <h2>Cardápio da Ásia</h2>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Entradas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Gyoza (Japão/China)</h4>
+              <p>
+                Pastelinhos cozidos no vapor e depois grelhados, recheados com
+                carne de porco moída e vegetais.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>
+                Satay de Frango com Molho de Amendoim (Indonésia/Tailândia)
+              </h4>
+              <p>
+                Espetinhos de frango marinado e grelhado, servidos com um
+                delicioso e cremoso molho de amendoim.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper">
+            <h3>Pratos Principais</h3>
+          </div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Ramen Tonkotsu (Japão)</h4>
+              <p>
+                Caldo rico e cremoso de osso de porco, servido com macarrão de
+                ramen, fatias de porco (chashu), ovo cozido e nori.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Pad Thai com Camarões (Tailândia)</h4>
+              <p>
+                Macarrão de arroz frito com camarões, tofu, broto de feijão, ovo
+                e molho agridoce, finalizado com amendoim.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Caril Verde Tailandês de Frango (Tailândia)</h4>
+              <p>
+                Frango cozido em leite de coco com pasta de caril verde,
+                berinjela tailandesa, bambu e folhas de manjericão.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Bibimbap Coreano (Coreia)</h4>
+              <p>
+                Arroz coberto com vegetais variados salteados, carne bovina,
+                gochujang (pasta de pimenta) e um ovo frito.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Sobremesas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Mochi Ice Cream (Japão)</h4>
+              <p>
+                Pequenas bolas de sorvete envoltas em uma camada macia de mochi
+                (massa de arroz glutinoso).
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Mango Sticky Rice (Tailândia)</h4>
+              <p>
+                Arroz glutinoso cozido em leite de coco, servido com fatias de
+                manga fresca e uma calda doce de coco.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="back-to-global-menu">
+          <a href="#cardapio-global" class="btn">Voltar aos Continentes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="europa-menu" class="continent-menu-section">
+      <div class="container">
+        <h2>Cardápio da Europa</h2>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Entradas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Bruschetta al Pomodoro e Basilico (Itália)</h4>
+              <p>
+                Fatias de pão italiano tostado, esfregadas com alho e cobertas
+                com tomate fresco picado, manjericão e azeite.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Gazpacho Andaluz (Espanha)</h4>
+              <p>
+                Sopa fria refrescante feita com tomates maduros, pepino,
+                pimentão, alho e azeite, perfeita para dias quentes.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper">
+            <h3>Pratos Principais</h3>
+          </div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Spaghetti Carbonara Autêntico (Itália)</h4>
+              <p>
+                Massa longa com molho cremoso de ovos, queijo Pecorino Romano,
+                guanciale (bochecha de porco curada) e pimenta preta.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Boeuf Bourguignon (França)</h4>
+              <p>
+                Ensopado clássico de carne bovina cozida lentamente em vinho
+                tinto da Borgonha, com cogumelos, cebolas e bacon.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Wiener Schnitzel com Salada de Batata (Áustria)</h4>
+              <p>
+                Bife de vitela fino, empanado e frito até dourar,
+                tradicionalmente servido com salada de batata austríaca.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Moussaka Grega (Grécia)</h4>
+              <p>
+                Camadas de berinjela grelhada, carne moída de cordeiro temperada
+                e um cremoso molho béchamel, assada no forno.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Sobremesas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Tiramisù Clássico (Itália)</h4>
+              <p>
+                Camadas de biscoitos savoiardi embebidos em café, creme de
+                mascarpone e cacau em pó.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Apfelstrudel (Strudel de Maçã - Áustria/Alemanha)</h4>
+              <p>
+                Massa folhada fina recheada com maçãs, passas, canela e migalhas
+                de pão, servido quente com chantilly ou sorvete.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="back-to-global-menu">
+          <a href="#cardapio-global" class="btn">Voltar aos Continentes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="oceania-menu" class="continent-menu-section">
+      <div class="container">
+        <h2>Cardápio da Oceania</h2>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Entradas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Vieiras Grelhadas com Manteiga de Limão (Austrália)</h4>
+              <p>
+                Vieiras frescas grelhadas rapidamente e servidas com um molho
+                simples e saboroso de manteiga e limão siciliano.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Bruschetta de Abacate com Queijo Feta (Austrália)</h4>
+              <p>
+                Uma versão moderna da bruschetta, com abacate amassado, queijo
+                feta esfarelado e um fio de azeite sobre pão tostado.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper">
+            <h3>Pratos Principais</h3>
+          </div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>Barramundi Assado com Ervas e Limão (Austrália)</h4>
+              <p>
+                Filé de barramundi, peixe popular australiano, assado com ervas
+                frescas, rodelas de limão e azeite.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Cordeiro Assado com Alecrim e Alho (Nova Zelândia)</h4>
+              <p>
+                Perna de cordeiro neozelandês assada lentamente com ramos de
+                alecrim fresco e dentes de alho inteiros.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>"Surf and Turf" Australiano</h4>
+              <p>
+                Combinação de um suculento bife grelhado (geralmente filé) com
+                camarões grandes ou lagosta, um clássico moderno.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Risoto de Abóbora Assada e Sálvia (Austrália)</h4>
+              <p>
+                Risoto cremoso feito com purê de abóbora assada, queijo parmesão
+                e folhas de sálvia fresca fritas.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div class="menu-category-title-wrapper"><h3>Sobremesas</h3></div>
+          <div class="menu-items">
+            <article class="menu-item">
+              <h4>
+                Pavlova Clássica com Frutas da Estação (Austrália/Nova Zelândia)
+              </h4>
+              <p>
+                Base de merengue crocante por fora e macia por dentro, coberta
+                com chantilly e uma variedade de frutas frescas.
+              </p>
+            </article>
+            <article class="menu-item">
+              <h4>Lamingtons (Austrália)</h4>
+              <p>
+                Cubos de bolo pão de ló banhados em calda de chocolate e
+                cobertos com coco ralado seco.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="back-to-global-menu">
+          <a href="#cardapio-global" class="btn">Voltar aos Continentes</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container container-flex">
+        <div class="about-image">
+          <img
+            src="imgs/jpn rest.jpg"
+            alt="Ambiente interno do restaurante Sabor Celestial"
+          />
+        </div>
+        <div class="about-text">
+          <h2>Nossa Essência Global</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+            commodi maiores laboriosam iste nobis cupiditate blanditiis rerum
+            obcaecati molestiae dolores modi consectetur ut officiis, maxime
+            officia deleniti suscipit, tenetur porro.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+            alias quia expedita, tempore perferendis nostrum. Impedit quas,
+            voluptas laborum veritatis mollitia ratione nam vitae, cumque eius
+            architecto libero voluptatum perspiciatis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            animi, corrupti
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container container-grid">
+        <div class="contact-form">
+          <h3>Envie sua Mensagem</h3>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Nome Completo:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto:</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+            <div class="form-group">
+              <label for="message">Sua Mensagem:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Fale Conosco</h3>
+          <p>
+            <strong>Endereço:</strong><br />Av. Dr. Alberto Crivelenti, 55<br />Centro,
+            Altinópolis - SP
+          </p>
+          <p>
+            <strong>Telefone / WhatsApp:</strong><br /><a
+              href="tel:+5511123456789"
+              >(11) 12345-6789</a
+            >
+          </p>
+          <p>
+            <strong>E-mail:</strong><br /><a
+              href="mailto:contato@gamtrestaurante.com.br"
+              >contato@gamtrestaurante.com.br</a
+            >
+          </p>
+          <p>
+            <strong>Horário de Funcionamento:</strong><br />
+            Terça a Domingo: 11h30 - 24h<br />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 GAMT. Uma experiência gastronômica global.</p>
+        <p>Design por <a href="#">Arthur</a> com ❤️.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
