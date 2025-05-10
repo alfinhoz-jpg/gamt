@@ -1,10 +1,10 @@
-/* Configurações Globais e Variáveis de Cor (mantidas) */
+
 :root {
   --cor-fundo: #f4f9f9;
-  --cor-primaria: #1cc4e28e; /* Azul claro suave */
-  --cor-acento: #51dd519f; /* Verde lima bem claro */
-  --cor-texto-principal: #040424; /* Azul acinzentado escuro */
-  --cor-texto-secundario: #22262e; /* Azul acinzentado médio */
+  --cor-primaria: #1cc4e28e; 
+  --cor-acento: #51dd519f; 
+  --cor-texto-principal: #040424; 
+  --cor-texto-secundario: #22262e;
   --cor-bordas: #e0e0e0;
   --sombra-padrao: 0 4px 8px rgba(241, 213, 213, 0.08);
   --fonte-titulos: "Lora", serif;
@@ -135,7 +135,7 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   color: var(--cor-texto-secundario);
   font-weight: 500;
   padding: 8px 5px;
-  font-size: 1rem; /* Aumentado um pouco */
+  font-size: 1rem; 
   transition: color 0.3s ease, border-bottom-color 0.3s ease;
   border-bottom: 2px solid transparent;
 }
@@ -172,7 +172,6 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   color: #f2f0ff;
 }
 .btn-cta {
-  /* ... (mantido) */
   background-color: var(--cor-primaria);
   color: white;
   padding: 14px 28px;
@@ -217,7 +216,7 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 .continente-link-card img {
-  width: 100px; /* Ajuste conforme necessário */
+  width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -233,12 +232,10 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   font-size: 0.9rem;
   color: var(--cor-texto-secundario);
   margin-bottom: 20px;
-  min-height: 50px; /* Para alinhar botões se descrições variarem */
+  min-height: 50px; 
 }
 
-/* Estilo Comum para Cardápios Detalhados dos Continentes */
 .continent-menu-section .container > h2 {
-  /* Título do cardápio do continente */
   margin-bottom: 40px;
 }
 .menu-category {
@@ -252,11 +249,11 @@ section:nth-child(even):not(.hero):not(.site-footer) {
 .menu-category .menu-category-title-wrapper h3 {
   /* Entradas, Pratos Principais, Sobremesas */
   text-align: left;
-  font-size: 1.7rem; /* Aumentado um pouco */
-  margin-bottom: 0px; /* Removida margem inferior para usar a da div wrapper */
-  padding-bottom: 0; /* Removida borda inferior daqui */
+  font-size: 1.7rem; 
+  margin-bottom: 0px;
+  padding-bottom: 0; 
   border-bottom: none;
-  display: block; /* Alterado de inline-block */
+  display: block;
   color: var(--cor-texto-principal);
 }
 
@@ -266,7 +263,7 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   gap: 25px;
 }
 .menu-item {
-  /* Usado para pratos */
+ 
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -290,15 +287,14 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   font-size: 0.9rem;
   color: var(--cor-texto-secundario);
   line-height: 1.5;
-  flex-grow: 1; /* Para ocupar espaço e alinhar botões se houver */
-}
+  flex-grow: 1; 
 
 .back-to-global-menu {
   text-align: center;
   margin-top: 40px;
 }
 
-/* Seções Sobre e Contato (mantidas e estilos ajustados se necessário) */
+
 #about .container-flex {
   display: flex;
   gap: 40px;
@@ -325,7 +321,7 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   gap: 40px;
   align-items: flex-start;
 }
-/* ... (Resto dos estilos de Contato e Rodapé mantidos) ... */
+
 .contact-form h3,
 .contact-info h3 {
   text-align: left;
@@ -406,14 +402,13 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   text-decoration: underline;
 }
 
-/* Responsividade (ajustes podem ser necessários) */
 @media (max-width: 992px) {
   .main-nav li {
     margin-left: 15px;
   }
   .main-nav a {
     font-size: 0.95rem;
-  } /* Ajuste */
+  }
 }
 
 @media (max-width: 768px) {
@@ -473,7 +468,7 @@ section:nth-child(even):not(.hero):not(.site-footer) {
   }
   .continentes-grid {
     grid-template-columns: 1fr;
-  } /* Uma coluna para os cards de continentes */
+  }
   .menu-items {
     grid-template-columns: 1fr;
   }
